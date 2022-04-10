@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Landing Page</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.6/slick.css" />
+  <link rel="stylesheet" href="styles/style.css">
+
+</head>
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Adobe Marketo Engage <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Products
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+      </ul>
+      <span class="nav-item">
+        <a class="text-dark" style="text-decoration: none;" href="#">Sign In</a>
+      </span>
+    </div>
+  </nav>
+</header>
+
+<body>
+  <div class="container-fluid px-0">
+    <div class="section1-article row mt-4 d-flex justify-content-center section1 w-100 mx-0">
+        <div class="col-6 d-flex justify-content-center">
+          <div class="intro-content text-light">
+            <h2 class="">Adobe Marketo Engage makes the complex buyer journey simple.</h2>
+            <p>Get measurable results from acquisition to advocacy with experiences that keep customers engaged and
+              coming back.</p>
+              <div class="d-flex justify-content-start mt-4">
+                <a href="#" class="learnMoreBtn-white">Learn More</a>
+              </div>
+          </div>
+        </div>
+        <div class="col-6 d-flex justify-content-center">
+          <img src="./images/image2.png" />
+        </div>
+    </div>
+
+    <div class="section2-article row d-flex justify-content-center mb-5 section2 mx-0">
+        <div class="col-3">
+          <img class="section2-image" src="./images/image3.png" />
+        </div>
+        <div class="col-6 d-flex justify-content-center">
+          <div class="intro-content text-light">
+            <h2 class="">Adobe Marketo Engage makes the complex buyer journey simple.</h2>
+            <p>Get measurable results from acquisition to advocacy with experiences that keep customers engaged and
+              coming back.</p>
+          </div>
+        </div>
+        <div class="col-3 d-flex justify-content-center">
+          <!-- <img src="./images/image2.png" /> -->
+        </div>
+    </div>
+
+    <div class="row mt-4 mb-5 w-100 mx-0" style="border-bottom: 1px solid black;">
+      <h4 class="d-flex justify-content-center">Explore Marketo Engage</h4>
+      <div class="d-flex justify-content-center options">
+        <div class="row w-50 mt-5">
+          <div class="col d-flex justify-content-center pb-4" onclick="divVisibility('Div1','divImage1','border1');" id="border1">
+            Marketing Automation
+          </div>
+          <div class="col d-flex justify-content-center pb-4" onclick="divVisibility('Div2','divImage2','border2');" id="border2">
+            Email Marketing
+          </div>
+          <div class="col d-flex justify-content-center pb-4" onclick="divVisibility('Div3','divImage3','border3');" id="border3">
+            Lead Management
+          </div>
+          <div class="col d-flex justify-content-center pb-4" onclick="divVisibility('Div4','divImage4','border4');" id="border4">
+            Revenue Attribution
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col d-flex justify-content-end">
+          <img id="divImage1" class="image-2" src="./images/slide1.png" />
+          <img id="divImage2" class="image-2" src="./images/slide2.png" style="display: none;" />
+          <img id="divImage3" class="image-2" src="./images/slide3.png" style="display: none;" />
+          <img id="divImage4" class="image-2" src="./images/slide4.png" style="display: none;" />
+        </div>
+        <div class="col d-flex justify-content-center">
+          <div id="Div1">
+            <h2 class="">Adobe Marketo Engage makes the complex buyer journey simple.</h2>
+            <ul>
+              <li>Engage the right customers through behavior tracking</li>
+              <li>Easily build and scale automated marketing campaigns</li>
+              <li>Determine how marketing and channels impact revenue</li>
+            </ul>
+            <p>Leverage rich behavioral data, built-in intelligence, and sophisticated journey flows to identify, engage, and accelerate your best opportunities to orchestrate your buyer's journeys.</p>
+          </div>
+          <div id="Div2" style="display: none;">
+            <h2 class="">Attract customers through engaging conversations.</h2>
+            <ul>
+              <li>Get a 360-degree view of each customer across web, email, social, and mobile</li>
+              <li>Create relevant conversations based on individual behaviors in real time</li>
+              <li>Get a clear picture of impact and ROI with simple dashboards and in-depth reporting</li>
+            </ul>
+            <p>Break through the clutter and engage your customers with email campaigns as unique as their online behaviors wherever they are — automatically and at scale.</p>
+          </div>
+          <div id="Div3" style="display: none;">
+            <h2 class="">Attract, nurture, and deliver win-ready leads to sales.</h2>
+            <ul>
+              <li>Draw top-of-funnel traffic through inbound and outbound programs</li>
+              <li>Develop and qualify potential buyers before they’re passed to sales</li>
+              <li>Prove and improve marketing by tracking and accurately tying your marketing to revenue</li>
+            </ul>
+            <p>Attract buyers and nurture them with personalized campaigns, so your sales team can step in when they’re engaged and ready and close the deal.</p>
+          </div>
+          <div id="Div4" style="display: none;">
+            <h2 class="">Get unmatched visibility into your marketing performance.</h2>
+            <ul>
+              <li>Capture customer interactions with attribution that measures every touchpoint</li>
+              <li>Automatically connect and unify data, and spend more time acting on insights</li>
+              <li>Use pre-built tiles and dashboards with advanced filters and segmentations</li>
+            </ul>
+            <p>Learn what’s working and what’s not, then take that information to build revenue and dive into the true impact of your bottom line.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row d-flex justify-content-center">
+      <h4 class="d-flex justify-content-center">Marketo Engage powers experiences for these customers</h4>
+      <div class="icons mt-5">
+        <div class="row">
+          <div class="col">
+            <img src="./images/BetterCloud-Logo-RGB.png" />
+          </div>
+          <div class="col">
+            <img src="./images/BNZ.png" />
+          </div>
+          <div class="col">
+            <img src="./images/centurylink-logo-black.png" />
+          </div>
+          <div class="col">
+            <img src="./images/Citrix-Logo-Trademark.png" />
+          </div>
+          <div class="col">
+            <img src="./images/cloudera-newco-logo-hortonworks.png" />
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col">
+            <img src="./images/Fujitsu.png" />
+          </div>
+          <div class="col">
+            <img src="./images/mitel-logo.png" />
+          </div>
+          <div class="col">
+            <img src="./images/Panasonic.png" />
+          </div>
+          <div class="col">
+            <img src="./images/RingCentral-logo-20151-1024x181.png" />
+          </div>
+          <div class="col">
+            <img src="./images/Roche.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row d-flex justify-content-center w-100">
+      <div class="bottomBorder mt-4"></div>
+    </div>
+
+    <div class="row mt-5">
+      <div class="col">
+        <div class="leftSide">
+          <h2>Excited to be a B2B marketing automation Leader</h2>
+          <p>Read 2021 Gartner® Magic Quadrant™ for Automation Platforms to see why Adobe has been named a Leader.</p>
+        </div>
+      </div>
+      <div class="col">
+        <img class="gartnerImage" src="./images/gartner.png" />
+      </div>
+    </div>
+    <div class="row d-flex justify-content-center w-100">
+      <div class="bottomBorder mt-4"></div>
+    </div>
+    <div class="blogSection mt-5">
+      <div class="row d-flex justify-content-center">
+        <h2 class="d-flex justify-content-center">Discover everything Marketo Engage has to offer</h2>
+        <div class="row w-75 mt-4">
+          <div class="col d-flex justify-content-center">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="./images/gartner.png" alt="Card image cap">
+              <div class="card-body">
+                <h6 class="card-title">Content Personalization</h6>
+                <p class="card-text" style="font-size: 0.8rem;">Present best-fit content for 1:1 interactions and maintain personalization at scale using AI to impress your customers with compelling content</p>
+                <div class="row d-flex justify-content-center mx-auto w-100">
+                  <div class="bottomBorderInCard my-3"></div>
+                </div>
+                <div class="d-flex justify-content-end">
+                  <a href="#" class="learnMoreBtn-black">Learn More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="./images/gartner.png" alt="Card image cap">
+              <div class="card-body">
+                <h6 class="card-title">Content Personalization</h6>
+                <p class="card-text" style="font-size: 0.8rem;">Present best-fit content for 1:1 interactions and maintain personalization at scale using AI to impress your customers with compelling content</p>
+                <div class="row d-flex justify-content-center mx-auto w-100">
+                  <div class="bottomBorderInCard my-3"></div>
+                </div>
+                <div class="d-flex justify-content-end">
+                  <a href="#" class="learnMoreBtn-black">Learn More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="./images/gartner.png" alt="Card image cap">
+              <div class="card-body">
+                <h6 class="card-title">Content Personalization</h6>
+                <p class="card-text" style="font-size: 0.8rem;">Present best-fit content for 1:1 interactions and maintain personalization at scale using AI to impress your customers with compelling content</p>
+                <div class="row d-flex justify-content-center mx-auto w-100">
+                  <div class="bottomBorderInCard my-3"></div>
+                </div>
+                <div class="d-flex justify-content-end">
+                  <a href="#" class="learnMoreBtn-black">Learn More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row w-75 mt-4">
+          <div class="col d-flex justify-content-center">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="./images/gartner.png" alt="Card image cap">
+              <div class="card-body">
+                <h6 class="card-title">Content Personalization</h6>
+                <p class="card-text" style="font-size: 0.8rem;">Present best-fit content for 1:1 interactions and maintain personalization at scale using AI to impress your customers with compelling content</p>
+                <div class="row d-flex justify-content-center mx-auto w-100">
+                  <div class="bottomBorderInCard my-3"></div>
+                </div>
+                <div class="d-flex justify-content-end">
+                  <a href="#" class="learnMoreBtn-black">Learn More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="./images/gartner.png" alt="Card image cap">
+              <div class="card-body">
+                <h6 class="card-title">Content Personalization</h6>
+                <p class="card-text" style="font-size: 0.8rem;">Present best-fit content for 1:1 interactions and maintain personalization at scale using AI to impress your customers with compelling content</p>
+                <div class="row d-flex justify-content-center mx-auto w-100">
+                  <div class="bottomBorderInCard my-3"></div>
+                </div>
+                <div class="d-flex justify-content-end">
+                  <a href="#" class="learnMoreBtn-black">Learn More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="./images/gartner.png" alt="Card image cap">
+              <div class="card-body">
+                <h6 class="card-title">Content Personalization</h6>
+                <p class="card-text" style="font-size: 0.8rem;">Present best-fit content for 1:1 interactions and maintain personalization at scale using AI to impress your customers with compelling content</p>
+                <div class="row d-flex justify-content-center mx-auto w-100">
+                  <div class="bottomBorderInCard my-3"></div>
+                </div>
+                <div class="d-flex justify-content-end">
+                  <a href="#" class="learnMoreBtn-black">Learn More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row mt-5">
+      <div class="col">
+        <img class="gartnerImage" src="./images/gartner.png" />
+      </div>
+      <div class="col">
+        <div class="rightSide">
+          <h2>Excited to be a B2B marketing automation Leader</h2>
+          <p>Read 2021 Gartner® Magic Quadrant™ for Automation Platforms to see why Adobe has been named a Leader.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="sectionEnd-article row mt-4 d-flex justify-content-center section1 w-100 mx-0">
+      <div class="col-6 d-flex justify-content-center">
+        <div class="end-content text-light">
+          <h2 class="">Ready to get started?</h2>
+          <p>To learn how you can make the most of Marketo Engage, request a personal consultation.</p>
+          <div class="d-flex justify-content-start mt-4">
+            <a href="#" class="learnMoreBtn-white">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 d-flex justify-content-center">
+        <!-- <img src="./images/image2.png" /> -->
+      </div>
+  </div>
+    
+    <!-- Footer -->
+<footer class="text-center text-lg-start bg-light text-muted">
+  <!-- Section: Social media -->
+  <section
+    class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+  >
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span>Get connected with us on social networks:</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <!-- <a href="" class="me-4 text-reset">
+        <i class="fab fa-facebook-f"></i>
+      </a> -->
+      <!-- <a href="" class="me-4 text-reset">
+        <i class="fab fa-twitter"></i>
+      </a> -->
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <!-- <a href="" class="me-4 text-reset">
+        <i class="fab fa-linkedin"></i>
+      </a> -->
+      <!-- <a href="" class="me-4 text-reset">
+        <i class="fab fa-github"></i>
+      </a> -->
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i>MLJ Classes
+          </h6>
+          <p>
+            Here you can use rows and columns to organize your footer content. Lorem ipsum
+            dolor sit amet, consectetur adipisicing elit.
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <!-- <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold mb-4">
+            Products
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Angular</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">React</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Vue</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Laravel</a>
+          </p>
+        </div> -->
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <!-- <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold mb-4">
+            Useful links
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Pricing</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Settings</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Orders</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Help</a>
+          </p>
+        </div> -->
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Contact
+          </h6>
+          <p><i class="fas fa-home me-3"></i> Bhopal, Madhya Pradesh, 462030</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            info@mljclasses.com
+          </p>
+          <p><i class="fas fa-phone me-3"></i> + 01 9303115442</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2022 Copyright:
+    <a class="text-reset fw-bold" href="https://mljclasses.com/">mljClasses.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+  </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+  integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+  integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+<script src="js/app.js"></script>
+
+</html>
